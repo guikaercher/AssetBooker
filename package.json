@@ -1,0 +1,11 @@
+{
+  "name": "assetbooker",
+  "version": "1.0.0",
+  "description": "This software is intended to be used to book assets.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Guilherme Kaercher",
+  "license": "ISC"
+}
