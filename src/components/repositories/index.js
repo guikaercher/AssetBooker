@@ -1,5 +1,6 @@
 module.exports = () => {
-	const baseRepository = require('./baseRepository.js');
+	const { Pool, Client } = require('pg');
+	const baseRepository = require('./baseRepository.js')(Pool, Client);
 
 	return {
 		assetRepository : require('./assetRepository.js')(baseRepository),
