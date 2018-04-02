@@ -1,6 +1,5 @@
-module.exports = () => {
-	const express = require('express');
-	const bodyParser = require('body-parser');
+module.exports = (express, bodyParser) => {
+
 	const app = express();
 	app.use(bodyParser.json());
 
