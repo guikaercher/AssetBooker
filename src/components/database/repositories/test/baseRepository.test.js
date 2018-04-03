@@ -1,10 +1,12 @@
 const {expect} = require('chai');
 
 describe('Asset Repository', () => {
-	//TODO: fix this.
+
 	it('should create an asset into the database', () => {
 
-		const assetRepository = require('../assetRepository');
+		// ARRANGE
+		const mongoose = require('mongoose');
+		const entities = require('../../entities')(mongoose);
 		const asset = {
 			name : 'String',
 			description: 'String',
@@ -12,7 +14,12 @@ describe('Asset Repository', () => {
 			bookedBy : 'String'
 		};
 
-		assetRepository.create(asset);
+		const baseRepository = require('../baseRepository')(mongoose);
+
+		//ACT
+		baseRepository.create(entities.asset(asset));
+
+		//ASSERT
 
 	});
 
