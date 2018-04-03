@@ -1,8 +1,8 @@
 module.exports = (baseRepository, entities) => {
 
-	this.create = (obj) => {
+	this.create = async (obj) => {
 		const asset = entities.asset(obj);
-		baseRepository.create(asset);
+		return await baseRepository.create(asset);
 	};
 
 	return this;

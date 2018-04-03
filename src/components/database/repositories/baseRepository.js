@@ -3,10 +3,9 @@ module.exports = (mongoose) => {
 	// No need to `await` on this, mongoose 4 handles connection buffering internally
 	mongoose.connect('mongodb://localhost/test');
 
-	this.create = (genericEntity) => {
-		genericEntity.save((err, data) => {
-			console.log(err || data);
-		});
+	this.create = async (genericEntity) => {
+		const creationStatus = await genericEntity.save();
+		return creationStatus;
 	};
 
 	this.deleteById = (genericEntity, id) => {

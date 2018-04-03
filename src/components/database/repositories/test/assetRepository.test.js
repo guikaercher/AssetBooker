@@ -12,4 +12,28 @@ describe('Asset Repository', () => {
 		mongoose.connection.close();
 	});
 
+	it('should create an asset into the database', async () => {
+
+		// ARRANGE
+		const mongoose = require('mongoose');
+		const entities = require('../../entities')(mongoose);
+		const asset = {
+			name : 'unit-test-asset',
+			description: 'this is an unit test',
+			isBooked : false,
+			bookedBy : ''
+		};
+
+		const baseRepository = require('../baseRepository')(mongoose);
+
+		//ACT
+		const creationStatus = await baseRepository.create(entities.asset(asset));
+
+		//ASSERT
+		expect(creationStatus.name).to.be.equal('unit-test-asset');
+		expect(creationStatus.description).to.be.equal('this is an unit test');
+		expect(creationStatus.isBooked).to.be.equal(false);
+		expect(creationStatus.bookedBy).to.be.equal('');
+	});
+
 });
