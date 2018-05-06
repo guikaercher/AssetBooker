@@ -4,7 +4,7 @@
   "description": "This software is intended to be used to book assets.",
   "main": "index.js",
   "scripts": {
-    "dev": "./src/components/index.js",
+    "dev": "node ./src/index.js",
     "test": "./node_modules/.bin/mocha --reporter spec src/**/*.test.js"
   },
   "author": "Guilherme Kaercher",
