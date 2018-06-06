@@ -65,7 +65,7 @@ describe('Base Repository', () => {
 			bookedBy : ''
 		};
 		const newAsset = {
-			name : 'unit-test-asset',
+			name : 'unit-new-test-asset',
 			description: 'this is an unit test',
 			isBooked : true,
 			bookedBy : ''

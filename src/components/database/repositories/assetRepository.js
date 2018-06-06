@@ -15,12 +15,12 @@ module.exports = (baseRepository, entities) => {
 		return await baseRepository.findAll(asset);
 	};
 
-	this.update = async (assetObj, query, updateasset) => {
+	this.update = async (assetToUpdate, newAsset) => {
 		const asset = entities.asset;
-		return await baseRepository.update(asset, query, updateasset);
+		return await baseRepository.update(asset, assetToUpdate, newAsset);
 	};
 
-	this.delete = async (assetObj, assetToDelete) => {
+	this.delete = async (assetToDelete) => {
 		const asset = entities.asset;
 		return await baseRepository.delete(asset, assetToDelete);
 	};
