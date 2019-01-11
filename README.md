@@ -9,18 +9,7 @@ In progress...
 
 ## Why?
 The goal here was to have something published on github so people could see some code I made on my own.
-Also I tried to implement some concepts I learnt:
-- Repository pattern
-- Componentization
-- Functional Programming
-- KISS
-- S --> Single-responsiblity principle
-- O --> Open-closed principle
-- <s> L --> Liskov substitution principle </s> This one I don't have enough knwoledge yet
-- <s> I --> Interface segregation principle </s> This one I don't have enough knwoledge yet
-- D --> Dependency Inversion Principle
-- LEAN development
-- Git Flow
+Also I tried to implement some concepts I learnt like repository pattern, componentization functional Programming, KISS, SOLID, LEAN development and Git Flow
 
 ## Requests format
 Soon...
