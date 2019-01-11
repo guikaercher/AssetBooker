@@ -13,3 +13,12 @@ Also I tried to implement some concepts I learnt like repository pattern, compon
 
 ## Requests format
 Soon...
+
+## Next steps
+- Create a .env with database connections and local variables
+- Finish unit testing of what is already developed and start using TDD
+- Run on Heroku
+- Create the frontend
+- Fullfill "how to use" instructions
+- Integrate with TravisCI
+
