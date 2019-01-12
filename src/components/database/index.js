@@ -1,6 +1,6 @@
 module.exports = (mongoose) => {
-	const entities = require('./entities')(mongoose);
-	const repositories = require('./repositories')(mongoose, entities);
+    const entities = require("./entities")(mongoose);
+    const repositories = require("./repositories")(mongoose, entities);
 
-	return repositories;
+    return repositories;
 };

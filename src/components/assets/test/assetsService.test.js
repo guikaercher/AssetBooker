@@ -1,5 +1,5 @@
-describe('Assets Service', () => {
-	it('should list all assets', () => {
+describe("Assets Service", () => {
+    it("should list all assets", () => {
 
-	});
+    });
 });
